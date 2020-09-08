@@ -16,7 +16,7 @@ app.get('/', (req, res) => res.send('API Running'));
 
 //Defining routes
 
-app.use('/api/users', require('./routes/api/users'))
+app.use('/v1', require('./routes/api/users'))
 app.use('/v1', require('./routes/api/auth'))
 app.use('//profile', require('./routes/api/profile'))
 

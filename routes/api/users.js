@@ -10,7 +10,7 @@ const User = require('../../models/User')
 //Description - Signing up the user
 //Access - Public
 
-router.post('/', [
+router.post('/auth/signup', [
     check('name', 'Name is required')
         .not()
         .isEmpty(),
